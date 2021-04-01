@@ -1,0 +1,121 @@
+{
+  "Products": [
+    {
+      "id": 1,
+      "name": "Samsung",
+      "model": "M20",
+      "category_id": 1,
+      "description": "project decription goes here",
+      "price": 15000,
+      "image": "http://localhost:4200/assets/image/sam20.png",
+      "is available": true,
+      "rating": 4.5,
+      "reviews": 120,
+      "vendo_name": "Seller-1",
+      "waranty": 2
+    },
+    {
+      "id": 2,
+      "name": "One Plus",
+      "model": "nord",
+      "category_id": 2,
+      "description": "project decription goes here",
+      "price": 32000,
+      "image": "http://localhost:4200/assets/image/2.jpg",
+      "is available": true,
+      "rating": 5,
+      "reviews": 200,
+      "vendo_name": "Seller-1",
+      "waranty": 2
+    },
+    {
+      "name": "Redmi",
+      "id": 3,
+      "decription": "project decription goes here",
+      "price": "160000",
+      "model": "Note9 Pro",
+      "category_id": 3,
+      "waranty": 2
+    },
+    {
+      "id": 4,
+      "name": "Realme",
+      "model": "X5Pro",
+      "category_id": 4,
+      "description": "project decription goes here",
+      "price": 15000,
+      "image": "http://localhost:4200/assets/image/4.jpg",
+      "is available": true,
+      "rating": 5,
+      "reviews": 160,
+      "vendo_name": "Seller-1",
+      "waranty": 2
+    },
+    {
+      "id": 5,
+      "name": "Oppo",
+      "model": "F17Pro",
+      "category_id": 5,
+      "description": "project decription goes here",
+      "price": 18000,
+      "image": "http://localhost:4200/assets/image/5.jpeg",
+      "is available": true,
+      "rating": 4,
+      "reviews": 120,
+      "vendo_name": "Seller-1",
+      "waranty": 2
+    },
+    {
+      "productname": "Sumsung",
+      "id": 10,
+      "decription": "This is a new Product",
+      "price": "12000",
+      "model": "A20",
+      "category_id": "Samsung",
+      "waranty": "2",
+      "image": "C:\\fakepath\\sam20.png"
+    },
+    {
+      "name": "redmi",
+      "id": 12,
+      "decription": ",b,nbjnnlmn",
+      "price": "1312421",
+      "model": ",mn1",
+      "category_id": "2",
+      "waranty": "2",
+      "image": ""
+    }
+  ],
+  "categories": [
+    {
+      "Id": 1,
+      "categoryName": "Samsung"
+    },
+    {
+      "Id": 2,
+      "categoryName": "One Plus"
+    },
+    {
+      "Id": 3,
+      "categoryName": "Redmi"
+    },
+    {
+      "Id": 4,
+      "categoryName": "Realme"
+    },
+    {
+      "Id": 5,
+      "categoryName": "Oppo"
+    }
+  ],
+  "Reviews": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "Mobile Phones "
+  }
+}

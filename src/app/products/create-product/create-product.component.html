@@ -1,0 +1,62 @@
+<!-- <div class="container"> -->
+    <form #createform="ngForm" (submit)="addnewproduct(createform)">
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Product Name:</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1"  name="productname" ngModel>
+        </div>
+        <div class="col-md-6 mb-3">
+            <label for="exampleFormControlInput2" class="form-label">Product Id:</label>
+            <input type="text"class="form-control" id="exampleFormControlInput2" name="productid" ngModel>
+        </div>
+        <div class="col-md-6 mb-3">
+            <label for="exampleFormControlInput3" class="form-label">Product Price:</label>
+            <input type="text"class="form-control" id="exampleFormControlInput3" name="productprice" ngModel>
+        </div>
+        <div class="col-md-6 mb-3">
+            <label for="exampleFormControlInput4" class="form-label">Product Category Id:</label>
+          <input list="category" class="form-control" id="exampleFormControlInput4" name="productcategoryid" ngModel>
+          <datalist id="category">
+            <option value="Samsung">
+                <option value="OnePlus">
+                    <option value="Redmi">
+                        <option value="Realme">
+                <option value="Oppo">
+                
+            </datalist>
+        </div>
+        <div class="col-md-6 mb-3">
+            <label for="exampleFormControlInput5" class="form-label">Product Model:</label>
+            <input type="text"class="form-control" id="exampleFormControlInput5" name="productmodel" ngModel>
+        </div>
+        <div class="col-md-6 mb-3">
+            <label for="exampleFormControlInput6" class="form-label">Product Waranty:</label>
+            <input type="text"class="form-control" id="exampleFormControlInput6" name="productwaranty" ngModel>
+        </div>
+         <div class="col-md-6 mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="productdescription" ngModel></textarea>
+        </div>
+        <div class="col-md-6 mb-3">
+            <label for="exampleFormControlInput7" class="form-label">Product Image:</label>
+            <input type="file"class="form-control" (change)="onSelect($event)" id="exampleFormControlInput7" name="productimage" ngModel>
+        </div>
+        
+    </div>
+    <div class="form-row">
+       
+        <button class="btn btn-primary" type="submit">Submit form</button>
+    </div>
+</form>
+<!-- </div> -->
+<!-- "id": 1,
+"name": "Samsung",
+"model": "M20",
+"category_id": 2,
+"description": "project decription goes here",
+"price": 15000,
+"is available": true,
+"rating": 4.5,
+"reviews": 120,
+"vendo_name": "Seller-1",
+"waranty": 2 -->

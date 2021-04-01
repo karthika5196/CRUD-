@@ -1,0 +1,53 @@
+<p>update-product works!</p>
+   
+<h3>Updated Id:{{productid}}</h3>
+<form #updateform="ngForm" (submit)="updateProduct(updateform)">
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Product Name:</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" [(ngModel)]="productdetails.name" name="productname" ngModel>
+        </div>
+        <div class="col-md-6 mb-3">
+            <label for="exampleFormControlInput2" class="form-label">Product Id:</label>
+            <input type="text"class="form-control" id="exampleFormControlInput2" [(ngModel)]="productdetails.id" name="productid" ngModel>
+        </div>
+        <div class="col-md-6 mb-3">
+            <label for="exampleFormControlInput3" class="form-label">Product Price:</label>
+            <input type="text"class="form-control" id="exampleFormControlInput3" [(ngModel)]="productdetails.price" name="productprice" ngModel>
+        </div>
+        <div class="col-md-6 mb-3">
+            <label for="exampleFormControlInput4" class="form-label">Product Category Id:</label>
+          <input list="category" class="form-control" id="exampleFormControlInput4" [(ngModel)]="productdetails.category
+          id" name="productcategoryid" ngModel>
+          <datalist id="category">
+            <option value="Samsung">
+                <option value="OnePlus">
+                    <option value="Redmi">
+                        <option value="Realme">
+                <option value="Oppo">
+                
+            </datalist>
+        </div>
+        <div class="col-md-6 mb-3">
+            <label for="exampleFormControlInput5" class="form-label">Product Model:</label>
+            <input type="text"class="form-control" id="exampleFormControlInput5" [(ngModel)]="productdetails.model" name="productmodel" ngModel>
+        </div>
+        <div class="col-md-6 mb-3">
+            <label for="exampleFormControlInput6" class="form-label">Product Waranty:</label>
+            <input type="text"class="form-control" id="exampleFormControlInput6"  [(ngModel)]="productdetails.waranty"name="productwaranty" ngModel>
+        </div>
+         <div class="col-md-6 mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"  [(ngModel)]="productdetails.description" name="productdescription" ngModel></textarea>
+        </div>
+        <!-- <div class="col-md-6 mb-3">
+            <label for="exampleFormControlInput7" class="form-label">Product Image:</label>
+            <input type="file"class="form-control" (change)="onSelect($event)" id="exampleFormControlInput7" name="productimage" ngModel>
+        </div> -->
+        
+    </div>
+    <div class="form-row">
+       
+        <button class="btn btn-primary" type="submit">Update</button>
+    </div>
+</form>
